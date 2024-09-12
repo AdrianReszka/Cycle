@@ -1,0 +1,279 @@
+\hypertarget{_funkcje_8h}{}\doxysection{Dokumentacja pliku Funkcje.\+h}
+\label{_funkcje_8h}\index{Funkcje.h@{Funkcje.h}}
+{\ttfamily \#include \char`\"{}Struktury.\+h\char`\"{}}\newline
+Wykres zależności załączania dla Funkcje.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=283pt]{_funkcje_8h__incl}
+\end{center}
+\end{figure}
+Ten wykres pokazuje, które pliki bezpośrednio lub pośrednio załączają ten plik\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=224pt]{_funkcje_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Funkcje}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{_funkcje_8h_a932f706bb36e739c9431e1c5b98bbfd0}{oczytanie\+\_\+z\+\_\+pliku}} (const std\+::string \&plik\+\_\+z\+\_\+grafem)
+\begin{DoxyCompactList}\small\item\em Funkcja odczytuje dane z pliku. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{_funkcje_8h_afd3d89076601546457f0861ebfbdd959}{int\+\_\+ze\+\_\+stringa}} (std\+::string \&str)
+\begin{DoxyCompactList}\small\item\em Funkcja przeszkuje parametr typu string w celu odnalezienia ciagu znakow ktore zostane przeksztalcone w typ int i usuwa go. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a7d48580a0c2c9afe5ddd2bd6a93d2937}{wypisz\+\_\+vector}} (std\+::vector$<$ int $>$ \&vector)
+\begin{DoxyCompactList}\small\item\em Funkcja wypisuje zawartosc wektora. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{_funkcje_8h_a7fd7f327b85dc5ed34f55f25ff7a2d37}{czy\+\_\+wektor\+\_\+zawiera}} (const std\+::vector$<$ int $>$ \&vector, int wartosc)
+\begin{DoxyCompactList}\small\item\em Funkcja sprawdza czy podany wektor zawiera cykl do wypisania. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_aa082704fe48f62848bb45d6335dc2dd4}{szukanie\+\_\+cykli}} (const \mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&graf, std\+::vector$<$ int $>$ \&cykl, const int wierz\+\_\+poczatkowy, const int sasiad, std\+::ofstream \&zapis)
+\begin{DoxyCompactList}\small\item\em Funkcja szuka cykli w grafie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_aaec5b25bde296c4c34414d73ad132d0a}{stworz\+\_\+graf\+\_\+ze\+\_\+stringa}} (std\+::string str, \mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&graf)
+\begin{DoxyCompactList}\small\item\em Funkcja do pierwszego znalezionego wierzcholka grafu przypisuje jego sasiada. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a6aeb02146eb2357c6f1028b08605a441}{drukuj\+\_\+graf}} (\mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&graf)
+\begin{DoxyCompactList}\small\item\em Wypisuje w konsoli tekstowa reprezentacje grafu. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{_funkcje_8h_a341793864d7398479e9018ae5e3f4d3d}{zapisz\+\_\+cykle}} (\mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&graf, const std\+::string \&plik\+\_\+z\+\_\+cyklami)
+\begin{DoxyCompactList}\small\item\em Funkcja wywoluje funkcje szukanie\+\_\+cykli a po znalezieniu cykli zapisuje je do pliku. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Dokumentacja funkcji}
+\mbox{\Hypertarget{_funkcje_8h_a7fd7f327b85dc5ed34f55f25ff7a2d37}\label{_funkcje_8h_a7fd7f327b85dc5ed34f55f25ff7a2d37}} 
+\index{Funkcje.h@{Funkcje.h}!czy\_wektor\_zawiera@{czy\_wektor\_zawiera}}
+\index{czy\_wektor\_zawiera@{czy\_wektor\_zawiera}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{czy\_wektor\_zawiera()}{czy\_wektor\_zawiera()}}
+{\footnotesize\ttfamily bool czy\+\_\+wektor\+\_\+zawiera (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{vector,  }\item[{int}]{wartosc }\end{DoxyParamCaption})}
+
+
+
+Funkcja sprawdza czy podany wektor zawiera cykl do wypisania. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em vector} & Przeszukiwany wektor \\
+\hline
+{\em wartosc} & Cykl do wypisania ktorego szukamy w wektorze \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja zwraca true lub false w zaleznosci od tego czy znaleziono cykl do wypisania z wektora 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_funkcje_8h_a7fd7f327b85dc5ed34f55f25ff7a2d37_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_a6aeb02146eb2357c6f1028b08605a441}\label{_funkcje_8h_a6aeb02146eb2357c6f1028b08605a441}} 
+\index{Funkcje.h@{Funkcje.h}!drukuj\_graf@{drukuj\_graf}}
+\index{drukuj\_graf@{drukuj\_graf}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{drukuj\_graf()}{drukuj\_graf()}}
+{\footnotesize\ttfamily void drukuj\+\_\+graf (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&}]{graf }\end{DoxyParamCaption})}
+
+
+
+Wypisuje w konsoli tekstowa reprezentacje grafu. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ out}}  & {\em graf} & Graf do wypisania \\
+\hline
+ & {\em graf} & Graf ktory wypisujemy \\
+\hline
+\end{DoxyParams}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{_funkcje_8h_a6aeb02146eb2357c6f1028b08605a441_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_afd3d89076601546457f0861ebfbdd959}\label{_funkcje_8h_afd3d89076601546457f0861ebfbdd959}} 
+\index{Funkcje.h@{Funkcje.h}!int\_ze\_stringa@{int\_ze\_stringa}}
+\index{int\_ze\_stringa@{int\_ze\_stringa}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{int\_ze\_stringa()}{int\_ze\_stringa()}}
+{\footnotesize\ttfamily int int\+\_\+ze\+\_\+stringa (\begin{DoxyParamCaption}\item[{std\+::string \&}]{str }\end{DoxyParamCaption})}
+
+
+
+Funkcja przeszkuje parametr typu string w celu odnalezienia ciagu znakow ktore zostane przeksztalcone w typ int i usuwa go. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em str} & Lancuch znakow w ktorym szukamy ciagow znakow ktory mozemy przemienic na int \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca wierzcholki grafu zamienione int 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_funkcje_8h_afd3d89076601546457f0861ebfbdd959_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_a932f706bb36e739c9431e1c5b98bbfd0}\label{_funkcje_8h_a932f706bb36e739c9431e1c5b98bbfd0}} 
+\index{Funkcje.h@{Funkcje.h}!oczytanie\_z\_pliku@{oczytanie\_z\_pliku}}
+\index{oczytanie\_z\_pliku@{oczytanie\_z\_pliku}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{oczytanie\_z\_pliku()}{oczytanie\_z\_pliku()}}
+{\footnotesize\ttfamily std\+::string oczytanie\+\_\+z\+\_\+pliku (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{plik\+\_\+z\+\_\+grafem }\end{DoxyParamCaption})}
+
+
+
+Funkcja odczytuje dane z pliku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em plik\+\_\+z\+\_\+grafem} & Plik zawiera wierczholki grafu polaczone strzalkami \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Zwraca odczytane z pliku liczby typu string 
+\end{DoxyReturn}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=249pt]{_funkcje_8h_a932f706bb36e739c9431e1c5b98bbfd0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_aaec5b25bde296c4c34414d73ad132d0a}\label{_funkcje_8h_aaec5b25bde296c4c34414d73ad132d0a}} 
+\index{Funkcje.h@{Funkcje.h}!stworz\_graf\_ze\_stringa@{stworz\_graf\_ze\_stringa}}
+\index{stworz\_graf\_ze\_stringa@{stworz\_graf\_ze\_stringa}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{stworz\_graf\_ze\_stringa()}{stworz\_graf\_ze\_stringa()}}
+{\footnotesize\ttfamily void stworz\+\_\+graf\+\_\+ze\+\_\+stringa (\begin{DoxyParamCaption}\item[{std\+::string}]{str,  }\item[{\mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&}]{graf }\end{DoxyParamCaption})}
+
+
+
+Funkcja do pierwszego znalezionego wierzcholka grafu przypisuje jego sasiada. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ out}}  & {\em cykl} & Wektor zawierajacy cykle \\
+\hline
+ & {\em str} & Lancuch znakow ktory zostaje wykorzystany w celu wygenerowania grafu \\
+\hline
+ & {\em graf} & Graf ktory generujemy \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja nic nie zwraca 
+\end{DoxyReturn}
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_funkcje_8h_aaec5b25bde296c4c34414d73ad132d0a_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=270pt]{_funkcje_8h_aaec5b25bde296c4c34414d73ad132d0a_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_aa082704fe48f62848bb45d6335dc2dd4}\label{_funkcje_8h_aa082704fe48f62848bb45d6335dc2dd4}} 
+\index{Funkcje.h@{Funkcje.h}!szukanie\_cykli@{szukanie\_cykli}}
+\index{szukanie\_cykli@{szukanie\_cykli}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{szukanie\_cykli()}{szukanie\_cykli()}}
+{\footnotesize\ttfamily void szukanie\+\_\+cykli (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&}]{graf,  }\item[{std\+::vector$<$ int $>$ \&}]{cykl,  }\item[{const int}]{wierz\+\_\+poczatkowy,  }\item[{const int}]{sasiad,  }\item[{std\+::ofstream \&}]{zapis }\end{DoxyParamCaption})}
+
+
+
+Funkcja szuka cykli w grafie. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+ & {\em graf} & Graf ktory przeszukujemy w celu znalezienia w nim cykli \\
+\hline
+\mbox{\texttt{ out}}  & {\em cykl} & Znaleziony cykl w grafie \\
+\hline
+ & {\em wierz\+\_\+poczatkowy} & Wierzcholek poczatkowy krawedzi grafu \\
+\hline
+ & {\em sasiad} & Wierzcholek z ktorym wierzcholek poczatkowy posiada polaczenie w grafie \\
+\hline
+ & {\em zapis} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja nic nie zwraca 
+\end{DoxyReturn}
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=301pt]{_funkcje_8h_aa082704fe48f62848bb45d6335dc2dd4_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{_funkcje_8h_aa082704fe48f62848bb45d6335dc2dd4_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_funkcje_8h_a7d48580a0c2c9afe5ddd2bd6a93d2937}\label{_funkcje_8h_a7d48580a0c2c9afe5ddd2bd6a93d2937}} 
+\index{Funkcje.h@{Funkcje.h}!wypisz\_vector@{wypisz\_vector}}
+\index{wypisz\_vector@{wypisz\_vector}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{wypisz\_vector()}{wypisz\_vector()}}
+{\footnotesize\ttfamily void wypisz\+\_\+vector (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$ \&}]{vector }\end{DoxyParamCaption})}
+
+
+
+Funkcja wypisuje zawartosc wektora. 
+
+
+\begin{DoxyParams}[1]{Parametry}
+\mbox{\texttt{ out}}  & {\em vector} & Wektor z zapisanymi cyklami \\
+\hline
+ & {\em vector} & Wektor ktory zostanie wypisany \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{_funkcje_8h_a341793864d7398479e9018ae5e3f4d3d}\label{_funkcje_8h_a341793864d7398479e9018ae5e3f4d3d}} 
+\index{Funkcje.h@{Funkcje.h}!zapisz\_cykle@{zapisz\_cykle}}
+\index{zapisz\_cykle@{zapisz\_cykle}!Funkcje.h@{Funkcje.h}}
+\doxysubsubsection{\texorpdfstring{zapisz\_cykle()}{zapisz\_cykle()}}
+{\footnotesize\ttfamily void zapisz\+\_\+cykle (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_struktury_8h_a3c4299529669c76d41e06baf9788a20f}{Graf}} \&}]{graf,  }\item[{const std\+::string \&}]{plik\+\_\+z\+\_\+cyklami }\end{DoxyParamCaption})}
+
+
+
+Funkcja wywoluje funkcje szukanie\+\_\+cykli a po znalezieniu cykli zapisuje je do pliku. 
+
+
+\begin{DoxyParams}{Parametry}
+{\em graf} & Graf w ktorym szukamy cykli \\
+\hline
+{\em plik\+\_\+z\+\_\+cyklami} & Plik do ktorego zostana zapisane znalezione cykle \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Zwraca}
+Funkcja nic nie zwraca 
+\end{DoxyReturn}
+Oto graf wywołań dla tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_funkcje_8h_a341793864d7398479e9018ae5e3f4d3d_cgraph}
+\end{center}
+\end{figure}
+Oto graf wywoływań tej funkcji\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=228pt]{_funkcje_8h_a341793864d7398479e9018ae5e3f4d3d_icgraph}
+\end{center}
+\end{figure}
